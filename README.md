@@ -24,8 +24,8 @@ It is a program (using Ruby) to check if words are anagrams. It is true if they 
   * Example Input: "yes", "cat"
   * Example Output: "These words have no letter matches and are antigrams."
 * Program accounts for multiple words being anagrams or "antigrams."
-  * Example Input:
-  * Example Output:
+  * Example Input: "elbow", "below, tank"
+  * Example Output: "elbow and below are anagrams, elbow and tank are antigrams"
 
 ## Setup/Installation Requirements
 
