@@ -8,6 +8,9 @@
 It is a program (using Ruby) to check if words are anagrams. It is true if they contain the exact same letters in a different order.
 
 ## Specifications
+* Program checks if two words are not anagrams if they contain different numbers of characters.
+  * Example Input: "elbow", "belowed"
+  * Example Output: "These words are not anagrams."
 * Program checks if two words are anagrams.
   * Example Input:
   * Example Output:
