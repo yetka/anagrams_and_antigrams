@@ -10,4 +10,8 @@ describe('anagrams_and_antigrams') do
     new_word = Word.new("elbow")
     expect(new_word.anagrams_and_antigrams("below")).to(eq("These words are anagrams."))
   end
+  it("accounts for the possibility that words might have different cases") do
+    new_word = Word.new("Elbow")
+    expect(new_word.anagrams_and_antigrams("Below")).to(eq("These words are anagrams."))
+  end
 end

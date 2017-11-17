@@ -15,8 +15,8 @@ It is a program (using Ruby) to check if words are anagrams. It is true if they 
   * Example Input: "elbow", "below"
   * Example Output: "These words are anagrams."
 * Program accounts for the possibility that words might have different cases but should still be anagrams.
-  * Example Input:
-  * Example Output:
+  * Example Input: "Elbow", "Below"
+  * Example Output: "These words are anagrams."
 * If a word or phrase is an anagram, program checks if it's also a palindrome.
   * Example Input:
   * Example Output:
