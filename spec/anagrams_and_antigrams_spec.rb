@@ -18,4 +18,8 @@ describe('anagrams_and_antigrams') do
     new_word = Word.new("Hello")
     expect(new_word.anagrams_and_antigrams("Olleh")).to(eq("These words are palindromes."))
   end
+  it("checks if the inputs are words") do
+    new_word = Word.new("BOwl")
+    expect(new_word.anagrams_and_antigrams("bllw")).to(eq("You need to input actual words!"))
+  end
 end

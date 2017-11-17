@@ -21,8 +21,8 @@ It is a program (using Ruby) to check if words are anagrams. It is true if they 
   * Example Input: "Hello", "Olleh"
   * Example Output: "These words are palindromes."
 * Program checks if the inputs are real English words.
-  * Example Input:
-  * Example Output:
+  * Example Input: "BOwl", "bllw"
+  * Example Output: "You need to input actual words!"
 * If phrases aren't anagrams, program checks whether they are actually "antigrams."
   * Example Input:
   * Example Output:
