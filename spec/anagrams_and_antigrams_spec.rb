@@ -14,4 +14,8 @@ describe('anagrams_and_antigrams') do
     new_word = Word.new("Elbow")
     expect(new_word.anagrams_and_antigrams("Below")).to(eq("These words are anagrams."))
   end
+  it("accounts for the possibility that words might be palindromes") do
+    new_word = Word.new("Hello")
+    expect(new_word.anagrams_and_antigrams("Olleh")).to(eq("These words are palindromes."))
+  end
 end
