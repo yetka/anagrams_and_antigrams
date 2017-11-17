@@ -10,19 +10,19 @@ It is a program (using Ruby) to check if words are anagrams. It is true if they 
 ## Specifications
 * Program checks if two words are anagrams if they have the same length and content.
   * Example Input: "elbow", "below"
-  * Example Output: "These words are anagrams."
+  * Example Output: "elbow and below are anagrams."
 * Program accounts for the possibility that words might have different cases but should still be anagrams.
   * Example Input: "Elbow", "Below"
-  * Example Output: "These words are anagrams."
+  * Example Output: "Elbow and Below are anagrams."
 * Program checks if words are palindromes.
   * Example Input: "Hello", "Olleh"
-  * Example Output: "These words are palindromes."
+  * Example Output: "Hello and Olleh are palindromes."
 * Program checks if the inputs are real English words.
   * Example Input: "BOwl", "bllw"
   * Example Output: "You need to input actual words!"
 * If phrases aren't anagrams, program checks whether they are actually "antigrams".
   * Example Input: "yes", "cat"
-  * Example Output: "These words have no letter matches and are antigrams."
+  * Example Output: "yes and cat have no letter matches and are antigrams."
 * Program accounts for multiple words being anagrams or "antigrams."
   * Example Input: "elbow", "below, tank"
   * Example Output: "elbow and below are anagrams, elbow and tank are antigrams"
