@@ -11,9 +11,9 @@ It is a program (using Ruby) to check if words are anagrams. It is true if they 
 * Program checks if two words are not anagrams if they contain different numbers of characters.
   * Example Input: "elbow", "belowed"
   * Example Output: "These words are not anagrams."
-* Program checks if two words are anagrams.
-  * Example Input:
-  * Example Output:
+* Program checks if two words are anagrams if they have the same length and content.
+  * Example Input: "elbow", "below"
+  * Example Output: "These words are anagrams."
 * Program accounts for the possibility that words might have different cases but should still be anagrams.
   * Example Input:
   * Example Output:
