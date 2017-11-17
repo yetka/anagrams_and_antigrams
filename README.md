@@ -8,9 +8,6 @@
 It is a program (using Ruby) to check if words are anagrams. It is true if they contain the exact same letters in a different order.
 
 ## Specifications
-* Program checks if two words are not anagrams if they contain different numbers of characters.
-  * Example Input: "elbow", "belowed"
-  * Example Output: "These words are not anagrams."
 * Program checks if two words are anagrams if they have the same length and content.
   * Example Input: "elbow", "below"
   * Example Output: "These words are anagrams."
@@ -23,9 +20,9 @@ It is a program (using Ruby) to check if words are anagrams. It is true if they 
 * Program checks if the inputs are real English words.
   * Example Input: "BOwl", "bllw"
   * Example Output: "You need to input actual words!"
-* If phrases aren't anagrams, program checks whether they are actually "antigrams."
-  * Example Input:
-  * Example Output:
+* If phrases aren't anagrams, program checks whether they are actually "antigrams".
+  * Example Input: "yes", "cat"
+  * Example Output: "These words have no letter matches and are antigrams."
 * Program accounts for multiple words being anagrams or "antigrams."
   * Example Input:
   * Example Output:

@@ -2,11 +2,7 @@ require('rspec')
 require('anagrams_and_antigrams')
 
 describe('anagrams_and_antigrams') do
-  it("checks if two words are not anagrams if they contain different numbers of characters") do
-    new_word = Word.new("elbow")
-    expect(new_word.anagrams_and_antigrams("belowed")).to(eq("These words are not anagrams."))
-  end
-  it("checks if two words are anagrams if they have the same length and content.") do
+  it("checks if two words are anagrams if they have the same length and content") do
     new_word = Word.new("elbow")
     expect(new_word.anagrams_and_antigrams("below")).to(eq("These words are anagrams."))
   end
@@ -21,5 +17,9 @@ describe('anagrams_and_antigrams') do
   it("checks if the inputs are words") do
     new_word = Word.new("BOwl")
     expect(new_word.anagrams_and_antigrams("bllw")).to(eq("You need to input actual words!"))
+  end
+  it("checks if two words are antigrams") do
+    new_word = Word.new("yes")
+    expect(new_word.anagrams_and_antigrams("cat")).to(eq("These words have no letter matches and are antigrams."))
   end
 end
