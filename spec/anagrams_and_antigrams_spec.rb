@@ -22,8 +22,8 @@ describe('anagrams_and_antigrams') do
     new_word = Word.new("yes")
     expect(new_word.anagrams_and_antigrams("cat")).to(eq("yes and cat have no letter matches and are antigrams."))
   end
-  # it("accounts for multiple words being anagrams or antigrams") do
-  #   new_word = Word.new("elbow")
-  #   expect(new_word.anagrams_and_antigrams("below, tank")).to(eq("elbow and below are anagrams, elbow and tank are antigrams"))
-  # end
+  it("accounts for multiple words being anagrams or antigrams") do
+    new_word = Word.new("elbow")
+    expect(new_word.anagrams_and_antigrams("below,tank")).to(eq("elbow and below are anagrams.elbow and tank are antigrams."))
+  end
 end
